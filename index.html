@@ -7,13 +7,18 @@
     <link rel="title icon" type="image/png" href="images/camera-icon.png">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    
   </head>
   <body>
     <div class="wrapper">
       <header>
         <h1>Life In Nature</h1>
-        <nav>
-          <a href="" id="menu-icon"></a> 
+        <nav onclick=" navclick()">       <!--navigation bar click event added-->
+          <!--
+            <a href="" id="menu-icon"></a> 
+          -->
           <ul>
             <li><a href="#nature">Nature</a></li>
             <li><a href="#wildlife">Wildlife</a></li>
@@ -22,9 +27,11 @@
         </nav>
       </header>
       <!-- End Header -->
+
+      <h2>Nature</h2>
       <section>
         <a name="nature"></a>
-        <h2>Nature</h2>
+        
         <div class="container">
           <a href="images/nature1.jpeg"><img src="images/nature1.jpeg" alt="nature1"></a>
           <a href="images/nature2.jpeg"><img src="images/nature2.jpeg" alt="nature2"></a>
@@ -35,9 +42,10 @@
         </div>
       </section>
       <!-- End of Nature Section -->
+      <h2>Wildlife</h2>
       <section>
           <a name="wildlife"></a>
-          <h2>Wildlife</h2>
+          
           <div class="container">
               <a href="images/animal1.jpeg"><img src="images/animal1.jpeg" alt="animal1"></a>
               <a href="images/animal2.jpeg"><img src="images/animal2.jpeg" alt="animal2"></a>
@@ -48,9 +56,10 @@
           </div>
       </section>
       <!-- End of Wildlife Section -->
+      <h2>Hikers</h2>
       <section>
           <a name="hikers"></a>
-          <h2>Hikers</h2>
+          
           <div class="container">
               <a href="images/backpacker1.jpeg"><img src="images/backpacker1.jpeg" alt="backpacker1"></a>
               <a href="images/backpacker2.jpeg"><img src="images/backpacker2.jpeg" alt="backpacker2"></a>
@@ -85,6 +94,29 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+    
+    /*
+    //add event listener
+    document.getElementsByTagName("nav")[0].addEventListener("toggle",navclick)
+
+    //nav click functon
+
+    function navclick(e) {
+      document.getElementsByTagName("ul")[0].style.display="block";
+      
+    
+    }
+    */
+
+    //jquery for nav menu icon
+    
+    
+    
+    
+
+
+
+    
     </script>
   </body>
 </html>
